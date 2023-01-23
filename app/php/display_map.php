@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <header>
     <div class="logo">Filming In Paris</div>
@@ -26,7 +26,7 @@
 <?php  
 
     //define PDO - tell about the databse file
-    $db = new PDO('sqlite:tournages.db');
+    $db = new PDO('sqlite:../tournages.db');
 
     try{
     //write SQL
@@ -70,7 +70,7 @@
     <title>Tournages à Paris</title>
 
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
@@ -84,7 +84,7 @@
 
     <script type="text/javascript">var longitude = "<?= $longitude ?>";</script>
     <script type="text/javascript">var latitude = "<?= $latitude ?>";</script>
-    <script type="text/javascript" src="geolocation.js"></script>
+    <script type="text/javascript" src="../scripts/geolocation.js"></script>
 
 </head>
 

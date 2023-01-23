@@ -18,7 +18,7 @@
 // }
 
 function retrieve_data(){
-    fetch("./lieux-de-tournage-a-paris.json")
+    fetch("../data/lieux-de-tournage-a-paris.json")
     .then(function(response){
         return response.json();
     })

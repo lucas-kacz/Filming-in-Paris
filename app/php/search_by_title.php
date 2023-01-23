@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="../style.css">
 
 <header>
     <div class="logo">Filming In Paris</div>
@@ -24,7 +24,7 @@
 </form>
 
 <?php
-    $db = new PDO('sqlite:tournages.db');
+    $db = new PDO('sqlite:../tournages.db');
 
     try{
         $statement = "SELECT * FROM movies WHERE \"Titre\"=:movieTitle";
