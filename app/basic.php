@@ -4,7 +4,7 @@
     $pdo = new PDO('sqlite:tournages.db');
 
     //write SQL
-    $statement = $pdo->query("SELECT * FROM movies");
+    $statement = $pdo->query("SELECT * FROM movies WHERE \"Code Postal\" = \"75016\"");
 
     //run the SQL
     $rows = $statement->fetchAll(PDO::FETCH_ASSOC);
