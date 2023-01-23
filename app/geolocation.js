@@ -12,11 +12,11 @@ console.log("main.js");
 
 function init(){
     const parcThabor = {
-        lat: 48.114384,
-        lng: -1.669494
+        lat: latitude,
+        lng: longitude
     }
 
-    const zoomLevel = 7;
+    const zoomLevel = 15;
 
     const map = L.map('mapid').setView([parcThabor.lat, parcThabor.lng], zoomLevel);
 
@@ -25,7 +25,9 @@ function init(){
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
 
-    mainLayer.addTo(map);
+    var marker = new L.Marker([latitude, longitude])
 
+    mainLayer.addTo(map);
+    marker.addTo(map);
 }
 

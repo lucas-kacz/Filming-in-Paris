@@ -51,10 +51,10 @@
             exit();
         }
         
-    }catch (PDOException $e) {
-        print "We had an error: " . $e->getMessage()  . "<br/>";
-        die();
-    }
+        }catch (PDOException $e) {
+            print "We had an error: " . $e->getMessage()  . "<br/>";
+            die();
+        }
 
 ?>
 

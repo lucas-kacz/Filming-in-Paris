@@ -47,8 +47,8 @@ header{
 }
 
 #mapid { 
-height: 180px; 
-border: 2px solid red;
+height: 500px; 
+border: 2px solid #11101b;
 }
 
 .tab{
@@ -84,4 +84,25 @@ form{
     margin-right: auto;
     font-size: medium;
     border-color: #11101b;
+}
+
+.search-menu{
+    text-align: center;
+    padding: 2em;
+    font-size: 1.3em;
+}
+
+.search-menu a{
+    display: block;
+    color: #11101b;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.search-menu a:hover{
+    color: #fefefe;
+    background: #11101b;
 }

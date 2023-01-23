@@ -11,6 +11,15 @@
          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
          <link href="https://fonts.googleapis.com/css2?family=Lato&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
          <link rel="stylesheet" href="style.css">
+
+         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+         integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+         crossorigin=""/>
+
+         <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+         integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+         crossorigin=""></script>
+
       </head>
 
     <body>
@@ -31,6 +40,9 @@
                <li>
                   <a href="/search_home.html">Search</a>
                </li>
+               <li>
+                  <a href="/test.html">Map</a>
+               </li>
             </ul>
          </nav>
 
@@ -38,7 +50,7 @@
 
 
 
-        <table>
+        <table class="tab">
             <thead>
                <tr>
                   <th>Id Lieu</th>
@@ -55,6 +67,7 @@
                   <th>Coord Y</th>
                   <th>Geo Shape</th>
                   <th>Geo Point 2D</th>
+                  <th>Map</th>
                </tr>
             </thead>
             <tbody id="data-output">
