@@ -1,3 +1,28 @@
+<link rel="stylesheet" href="style.css">
+
+<header>
+    <div class="logo">Filming In Paris</div>
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+    </div>
+    <nav class="nav-bar">
+    <ul>
+        <li>
+            <a href="/index.html">Accueil</a>
+        </li>
+        <li>
+            <a href="/search_home.html">Search</a>
+        </li>
+    </ul>
+    </nav>
+</header>
+
+<form method="get">
+    <input class="search" type="text" name="id" placeholder="Film Id">
+    <input class="search" type="submit" value="Submit">
+</form>
+
 <?php  
 
     //define PDO - tell about the databse file
@@ -18,14 +43,17 @@
 
     $r=$statement->fetchAll();
 
-    $longitude=floatval($r[0][0]);
-    $latitude=floatval($r[0][1]);
-
-    var_dump($longitude, $latitude);
 
     if(!$r){
-        echo "No film found";
+        echo "Wrong Id";
         exit();
+    }
+
+    else{
+        $longitude=floatval($r[0][0]);
+        $latitude=floatval($r[0][1]);
+    
+        var_dump($longitude, $latitude);
     }
     
     }catch (PDOException $e) {
