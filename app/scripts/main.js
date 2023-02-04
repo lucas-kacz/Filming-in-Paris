@@ -18,7 +18,7 @@
 // }
 
 function retrieve_data(){
-    fetch("../data/lieux-de-tournage-a-paris.json")
+    fetch("https://lucaskaczmarski.esilv.olfsoftware.fr/tournages_a_paris/data/lieux-de-tournage-a-paris.json")
     .then(function(response){
         return response.json();
     })

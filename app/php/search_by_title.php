@@ -9,12 +9,16 @@
     <nav class="nav-bar">
     <ul>
         <li>
-            <a href="/index.html">Accueil</a>
+            <a href="../index.html">Accueil</a>
         </li>
         <li>
-            <a href="/search_home.html">Search</a>
+            <a href="../search_home.html">Search</a>
         </li>
-    </ul>
+        <li>
+            <a href="./display_map.php">Map</a>
+        </li>
+            
+        </ul>
     </nav>
 </header>
 

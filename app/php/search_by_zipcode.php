@@ -1,20 +1,24 @@
 <link rel="stylesheet" href="../style.css">
 
 <header>
+
     <div class="logo">Filming In Paris</div>
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>
     </div>
     <nav class="nav-bar">
-    <ul>
-        <li>
-            <a href="/index.html">Accueil</a>
-        </li>
-        <li>
-            <a href="/search_home.html">Search</a>
-        </li>
-    </ul>
+        <ul>
+            <li>
+                <a href="../index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="../search_home.html">Search</a>
+            </li>
+            <li>
+                <a href="./display_map.php">Map</a>
+            </li>
+        </ul>
     </nav>
 </header>
 
@@ -24,6 +28,7 @@
 </form>
 
 <?php
+    header("Access-Control-Allow-Origin: *");
     $db = new PDO('sqlite:../tournages.db');
 
     try{
